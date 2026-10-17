@@ -1,0 +1,30 @@
+{
+  "gradient_target_split_and_cache_tests": "PASS",
+  "source_hash": "PASS",
+  "all_five_saved_datasets_equal_regeneration": true,
+  "parameter_and_compute_budget_checks": "PASS",
+  "fresh_deterministic_reruns": [
+    {
+      "method": "seed_balanced",
+      "seed": 0,
+      "weights_bitwise_equal": true,
+      "all_metrics_equal": true,
+      "history_equal": true
+    },
+    {
+      "method": "shared_balanced",
+      "seed": 0,
+      "weights_bitwise_equal": true,
+      "all_metrics_equal": true,
+      "history_equal": true
+    },
+    {
+      "method": "modular_matrix",
+      "seed": 0,
+      "weights_bitwise_equal": true,
+      "all_metrics_equal": true,
+      "history_equal": true
+    }
+  ],
+  "notes": "Exact reruns are verified in the recorded environment; times/RSS are not expected to repeat exactly."
+}

@@ -1,0 +1,366 @@
+{
+  "seed": 2,
+  "method": "independent_capacity",
+  "parameters": 15534,
+  "parameter_bytes": 124272,
+  "parameter_plus_adam_bytes": 372816,
+  "parameter_grad_adam_bytes": 497088,
+  "peak_rss_bytes": 94322688,
+  "updates": 3000,
+  "examples": 192000,
+  "train_dense_macs": 3089171328,
+  "approx_dense_flops": 6178342656,
+  "train_wall_seconds": 1.280583000043407,
+  "train_cpu_seconds": 1.279284,
+  "inference_512_seconds": 0.0011844668071717024,
+  "memoization": {
+    "seconds": 0.006601250031962991,
+    "array_bytes": 147808,
+    "nodes": 596,
+    "hits": 1100,
+    "python_object_overhead_included": false
+  },
+  "metrics": {
+    "train_1": {
+      "n": 4,
+      "exact": 1.0,
+      "state": 1.0
+    },
+    "train_2": {
+      "n": 14,
+      "exact": 1.0,
+      "state": 1.0
+    },
+    "ood_2": {
+      "n": 2,
+      "exact": 0.0,
+      "state": 0.5
+    },
+    "train_3": {
+      "n": 38,
+      "exact": 1.0,
+      "state": 1.0
+    },
+    "iid_3": {
+      "n": 10,
+      "exact": 0.0,
+      "state": 0.425
+    },
+    "ood_3": {
+      "n": 16,
+      "exact": 0.0625,
+      "state": 0.3125
+    },
+    "train_4": {
+      "n": 131,
+      "exact": 0.9923664122137404,
+      "state": 0.9980916030534351
+    },
+    "iid_4": {
+      "n": 33,
+      "exact": 0.5151515151515151,
+      "state": 0.8106060606060606
+    },
+    "ood_4": {
+      "n": 92,
+      "exact": 0.07608695652173914,
+      "state": 0.4592391304347826
+    },
+    "train_5": {
+      "n": 448,
+      "exact": 0.6428571428571429,
+      "state": 0.8755580357142857
+    },
+    "iid_5": {
+      "n": 112,
+      "exact": 0.375,
+      "state": 0.703125
+    },
+    "ood_5": {
+      "n": 464,
+      "exact": 0.08620689655172414,
+      "state": 0.44665948275862066
+    },
+    "train_6": {
+      "n": 512,
+      "exact": 0.193359375,
+      "state": 0.62158203125
+    },
+    "iid_6": {
+      "n": 256,
+      "exact": 0.04296875,
+      "state": 0.4052734375
+    },
+    "ood_6": {
+      "n": 512,
+      "exact": 0.03125,
+      "state": 0.33984375
+    },
+    "train": {
+      "n": 1147,
+      "exact": 0.4995640802092415,
+      "state": 0.782258064516129
+    },
+    "iid": {
+      "n": 411,
+      "exact": 0.170316301703163,
+      "state": 0.5194647201946472
+    },
+    "ood": {
+      "n": 1086,
+      "exact": 0.058931860036832415,
+      "state": 0.39548802946593004
+    }
+  },
+  "history": [
+    {
+      "update": 500,
+      "loss": 1.26649543080369,
+      "primitive_accuracy": 1.0,
+      "train_accuracy": 0.07672188317349608
+    },
+    {
+      "update": 1000,
+      "loss": 0.02802938697619465,
+      "primitive_accuracy": 1.0,
+      "train_accuracy": 0.12031386224934612
+    },
+    {
+      "update": 1500,
+      "loss": 1.1617505032279487,
+      "primitive_accuracy": 1.0,
+      "train_accuracy": 0.21795989537925023
+    },
+    {
+      "update": 2000,
+      "loss": 0.009959268193456881,
+      "primitive_accuracy": 1.0,
+      "train_accuracy": 0.33129904097646035
+    },
+    {
+      "update": 2500,
+      "loss": 0.00464490513745201,
+      "primitive_accuracy": 1.0,
+      "train_accuracy": 0.4202266782911944
+    },
+    {
+      "update": 3000,
+      "loss": 0.003017196423008077,
+      "primitive_accuracy": 1.0,
+      "train_accuracy": 0.4995640802092415
+    }
+  ],
+  "failures": [
+    {
+      "split": "ood_2",
+      "program": [
+        0,
+        1
+      ],
+      "target": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "predicted": [
+        1,
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "split": "ood_2",
+      "program": [
+        2,
+        3
+      ],
+      "target": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "predicted": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "split": "ood_3",
+      "program": [
+        2,
+        3,
+        2
+      ],
+      "target": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "predicted": [
+        2,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "split": "ood_3",
+      "program": [
+        0,
+        0,
+        1
+      ],
+      "target": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "predicted": [
+        1,
+        0,
+        3,
+        2
+      ]
+    },
+    {
+      "split": "ood_4",
+      "program": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "target": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "predicted": [
+        2,
+        1,
+        3,
+        0
+      ]
+    },
+    {
+      "split": "ood_4",
+      "program": [
+        2,
+        3,
+        0,
+        3
+      ],
+      "target": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "predicted": [
+        1,
+        1,
+        0,
+        3
+      ]
+    },
+    {
+      "split": "ood_5",
+      "program": [
+        0,
+        3,
+        0,
+        1,
+        0
+      ],
+      "target": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "predicted": [
+        3,
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "split": "ood_5",
+      "program": [
+        3,
+        1,
+        2,
+        3,
+        1
+      ],
+      "target": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "predicted": [
+        3,
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "split": "ood_6",
+      "program": [
+        3,
+        0,
+        1,
+        2,
+        2,
+        2
+      ],
+      "target": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "predicted": [
+        2,
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "split": "ood_6",
+      "program": [
+        1,
+        0,
+        0,
+        1,
+        3,
+        0
+      ],
+      "target": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "predicted": [
+        0,
+        2,
+        3,
+        0
+      ]
+    }
+  ],
+  "primitive_change_since_first_checkpoint": 0.0
+}
