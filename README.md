@@ -10,6 +10,15 @@ A finite-state synthetic benchmark with nine conditions, five seeds, explicit pa
 
 ![Implementation mechanism: Four permutation primitives → Exclude selected adjacent pairs from training → Construct IID and held-out-pair splits → Keep length extrapolation separate → Compare recursive models with compute controls](assets/mechanism.svg)
 
+
+
+## Reproduce all training conditions
+
+A fresh full run retrained all**nine methods × five seeds**. Train/IID/OOD/length-extrapolation accuracies match the retained45 runs exactly. The result preserves the original failed balanced-tree hypothesis.
+
+[Commands, artifacts and benchmark scope](BENCHMARKS.md) · [Versioned profiles](reproduction.json)
+
+
 ## Try a small example
 
 The example inspects the generated train and held-out-pair split boundaries. It does not train the nine model conditions or rerun the five-seed benchmark.

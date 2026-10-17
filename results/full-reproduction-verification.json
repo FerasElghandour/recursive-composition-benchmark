@@ -1,0 +1,13 @@
+{
+  "conditions": 45,
+  "methods": 9,
+  "seeds": 5,
+  "metric_max_absolute_differences": {
+    "train_exact": 0.0,
+    "iid_exact": 0.0,
+    "ood_exact": 0.0,
+    "long_exact": 0.0
+  },
+  "scope": "All45conditions retrained with the same3000base-update protocol; timing values are hardware-dependent",
+  "source_sha256": "39841d26726257b05bf84236d21bfba7025a965d11ea7d30f2b60656291260f0"
+}
