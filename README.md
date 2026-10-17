@@ -59,3 +59,7 @@ For a new full experiment: `python experiment.py --out reproduced_results`, then
 The experiment rejects the balanced-growth hypothesis in this implementation. The algebraic baseline has an information advantage. Results concern the defined four-state task and do not establish general reasoning or training-efficiency claims.
 
 [Validation record](VALIDATION.md) · [Inputs and applicable notices](DATA.md)
+
+## Reuse
+
+The original contributions listed in [LICENSING.md](LICENSING.md) are available under [MIT](LICENSE). This scoped grant preserves upstream notices and separate dataset, simulator, notebook and checkpoint terms.
