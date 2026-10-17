@@ -8,12 +8,25 @@ Separate the effects of tree shape, shared composition, and staged training in a
 
 A finite-state synthetic benchmark with nine conditions, five seeds, explicit parameter/compute controls, finite-difference gradient checks, learned weights, and inspectable generalization splits.
 
-```mermaid
-flowchart LR
- A[Permutation programs] --> B[Fixed train and generalization splits]
- B --> C[Nine training conditions]
- C --> D[Five-seed evaluation]
- D --> E[Gradient, budget and repeat audits]
+![Implementation mechanism: Four permutation primitives → Exclude selected adjacent pairs from training → Construct IID and held-out-pair splits → Keep length extrapolation separate → Compare recursive models with compute controls](assets/mechanism.svg)
+
+## Try a small example
+
+The example inspects the generated train and held-out-pair split boundaries. It does not train the nine model conditions or rerun the five-seed benchmark.
+
+After the local setup below, run from the repository root:
+
+```sh
+python examples/quickstart.py
+```
+
+The [example source](examples/quickstart.py), [captured output](examples/expected-output.txt) and [execution record](examples/environment.json) keep this demonstration inspectable. Floating-point values may vary with library versions.
+
+Observed output from this run:
+
+```text
+{'train_3': [38, 3], 'ood_3': [16, 3], 'long_8': [512, 8], 'train_has_forbidden': False, 'ood_has_forbidden': True}
+{'target_first_train': [[2, 1, 3, 0]]}
 ```
 
 ## Evidence and results
